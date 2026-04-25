@@ -9,6 +9,8 @@
                                         ╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
                                                  P R O J E C T S  —  365 Day AI Journey
 ```
+<img width="1230" height="624" alt="image" src="https://github.com/user-attachments/assets/3832c3c1-ffe6-4dd5-b41e-349ea7b299d6" />
+
 
 <br/>
 
