@@ -9,7 +9,9 @@
                                         ╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
 ```
 
-
+<div align="center">
+  <img src="banner.svg" alt="Python Projects Banner"/>
+</div>
 <br/>
 
 **Day 15 of 365 &nbsp;|&nbsp; Landing an AI/Ml Internship**
