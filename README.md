@@ -1,18 +1,18 @@
 <div align="center">
 
 ```
-██████╗ ██╗   ██╗████████╗██╗  ██╗ ██████╗ ███╗   ██╗
-██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██╔═══██╗████╗  ██║
-██████╔╝ ╚████╔╝    ██║   ███████║██║   ██║██╔██╗ ██║
-██╔═══╝   ╚██╔╝     ██║   ██╔══██║██║   ██║██║╚██╗██║
-██║        ██║      ██║   ██║  ██║╚██████╔╝██║ ╚████║
-╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-        P R O J E C T S  —  365 Day AI Journey
+                                        ██████╗ ██╗   ██╗████████╗██╗  ██╗ ██████╗ ███╗   ██╗
+                                        ██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██╔═══██╗████╗  ██║
+                                        ██████╔╝ ╚████╔╝    ██║   ███████║██║   ██║██╔██╗ ██║
+                                        ██╔═══╝   ╚██╔╝     ██║   ██╔══██║██║   ██║██║╚██╗██║
+                                        ██║        ██║      ██║   ██║  ██║╚██████╔╝██║ ╚████║
+                                        ╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+                                                 P R O J E C T S  —  365 Day AI Journey
 ```
 
 <br/>
 
-**Day 15 of 365 &nbsp;|&nbsp; Python → NumPy → Pandas → ML → AI Engineering**
+**Day 15 of 365 &nbsp;|&nbsp; Landing an Internship**
 
 <br/>
 
@@ -149,9 +149,8 @@ I'm genuinely open to feedback, advice, and correction. If you see something I'm
 If you want to follow the journey, give feedback, or just say hi — reach out.
 
 <!-- Replace with your actual links -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_HANDLE)
-[![Twitter/X](https://img.shields.io/badge/Twitter-Follow-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/YOUR_HANDLE)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/YOUR_HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)]([https://linkedin.com/in/YOUR_HANDLE](https://www.linkedin.com/in/roughyyy/))
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/YOUR_HANDLE](https://github.com/Roughyyy08))
 
 </div>
 
