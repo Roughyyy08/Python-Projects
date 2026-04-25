@@ -152,7 +152,6 @@ If you want to follow the journey, give feedback, or just say hi — reach out.
 <!-- Replace with your actual links -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/roughyyy/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Roughyyy08)
-[![Twitter/X](https://img.shields.io/badge/Twitter-Follow-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/YOUR_HANDLE)
 
 </div>
 
