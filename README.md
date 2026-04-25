@@ -12,7 +12,7 @@
 
 <br/>
 
-**Day 15 of 365 &nbsp;|&nbsp; Landing an Internship**
+**Day 15 of 365 &nbsp;|&nbsp; Landing an AI/Ml Internship**
 
 <br/>
 
@@ -74,9 +74,10 @@ This is the path. Not rigid, but directional.
 
 | Phase | Focus | Status |
 |-------|-------|--------|
-| **Phase 1** | Python Fundamentals | ✅ Complete — Day 15 |
-| **Phase 2** | NumPy | 🔄 In Progress |
-| **Phase 3** | Pandas | ⏳ Up Next |
+| **Phase 0** | Python Fundamentals | ✅ Complete — Day 15 |
+| **Phase 1** | NumPy | 🔄 In Progress |
+| **Phase 2** | Pandas | ⏳ Up Next |
+| **Phase 3** | Maths | ⏳ Planned |
 | **Phase 4** | Data Visualization (Matplotlib / Seaborn) | ⏳ Planned |
 | **Phase 5** | Machine Learning (scikit-learn) | ⏳ Planned |
 | **Phase 6** | Deep Learning (PyTorch / TensorFlow) | ⏳ Planned |
@@ -149,8 +150,9 @@ I'm genuinely open to feedback, advice, and correction. If you see something I'm
 If you want to follow the journey, give feedback, or just say hi — reach out.
 
 <!-- Replace with your actual links -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)]([https://linkedin.com/in/YOUR_HANDLE](https://www.linkedin.com/in/roughyyy/))
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/YOUR_HANDLE](https://github.com/Roughyyy08))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/roughyyy/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Roughyyy08)
+[![Twitter/X](https://img.shields.io/badge/Twitter-Follow-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/YOUR_HANDLE)
 
 </div>
 
