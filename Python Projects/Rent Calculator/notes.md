@@ -1,4 +1,4 @@
-# inputs we need from user => using input() function
+# Inputs we need from user => using input() function
 
 => Number of friends/people living   
 => Total rent of Room/PG
@@ -6,11 +6,11 @@
 => Electricity units spend
 => Charge per unit
 
-# outputs
+# Outputs
 => Total amount to be paid is ""
 => Each member should pay ""
  
-# mistakes i did
+# Mistakes I Did
 
 => not taking input in int()
 => writing everthing directly 
@@ -19,7 +19,7 @@
 => in if case using return instead of exit()
 => removing the self.friends == 0 as i already handle this case in try and exception method
 
-# solutions
+# Solutions
 
 => input() gives str so we need to convert it into int() for calculations
 => using class and function so we can reuse it
