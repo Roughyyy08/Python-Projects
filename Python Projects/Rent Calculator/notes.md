@@ -1,4 +1,4 @@
-# Inputs we need from user
+# Inputs We Need From User
 
 - Number of friends / people living  
 - Total rent of Room/PG  
