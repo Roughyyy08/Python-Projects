@@ -1,80 +1,100 @@
-# Computer Choice 
+# Rock Paper Scissors | Notes
 
-- It should be random, can be done using `random` built-in module in python
-- It should be only between these three numbers `[-1, 0, 1]`
+## Initial Idea (Before I Started Coding)
 
----
+I first thought of using numbers to represent choices:
+- `-1` = Rock
+- `0` = Paper  
+- `1` = Scissors
 
-# User Choice
-
-- Take input from user using `input()`
-- It should be only between these three numbers `[-1, 0, 1]`
-
----
-
-# Defining Numbers
-
-- `-1` means Rock
-- `0` means Paper
-- `1` means Scissors
+And taking number input from the user. But I switched to using the actual words `["rock", "paper", "scissors"]` — easier to read, easier to validate, less confusing overall.
 
 ---
 
-# Rules of Game
+## How I Planned It
 
-- Rock vs Paper
-- Rock vs Scissors
-- Paper vs Scissors
-- Rock vs Rock
-- Paper vs Paper
-- Scissors vs Scissors
+### What the computer needs to do
+- Pick randomly from `["rock", "paper", "scissors"]` using the `random` built-in module
 
----
+### What the player needs to do
+- Type their choice using `input()`
+- Only valid inputs: `rock`, `paper`, `scissors`, or `quit` to exit
 
-# Action Plan
+### Rules
+| Round Matchup | Winner |
+|---------------|--------|
+| Rock vs Scissors | Rock |
+| Scissors vs Paper | Scissors |
+| Paper vs Rock | Paper |
+| Rock vs Rock | Tie |
+| Paper vs Paper | Tie |
+| Scissors vs Scissors | Tie |
 
-- using class because i want to store the scores and decide a winner
-- fix the choices [rock, paper, scissors]
-- deciding what functions to make
-    1. Computer Choice
-    2. Player Input
-    3. Play a Round
-    4. Deciding Winner
-    5. Round Score
-    6. Final Result
+### Methods I planned
+1. `computer_choice()` — random pick from choices list
+2. `play_round()` — handles one full round, returns True/False to control the loop
+3. `determine_winner()` — compares player and computer choice, returns who won
+4. `show_score()` — prints current score after each round
+5. `final_result()` — prints full summary when game ends
+6. `start()` — runs the game loop
 
-- Design
-    START game
-        LOOP forever:
-            ask player for input
-            IF input is "quit" → BREAK
-            IF input is invalid → ask again
-            generate computer choice
-            compare choices → find winner
-            update score
-            show result and score
-        END LOOP
-           show final result
-    END
-
-# Problems I Faced
-
-- winner_map was wrong
-- score used to reset after every game
-- game was ending after every round
-- if input was invalid the game ends automatically
-- when invalid input was given computer output used to be printed
+### Game Flow
+```
+START
+  LOOP forever:
+    ask player for input
+    IF input is "quit" → BREAK
+    IF input is invalid → ask again (don't end the game)
+    generate computer choice
+    compare choices → find winner
+    update score
+    show result and score
+  END LOOP
+  show final result
+END
+```
 
 ---
 
-# Solutions
+## Problems I Faced
 
-- do it from one pov so that either player or computer wins all the time and use that in determine_winner
-- store scores in `__init__` because it belongs to object not function 
-    1. scores are stores
-    2. accessible by multiple methods 
-- return True in `play_round()` after `show_score()`
-- return True after invalid choices case in `play_round()`
-- initialize the computer variable after the if else of player is finished
+| Problem | What Was Happening |
+|--------|-------------------|
+| `Winner_Map` was wrong | Some matchups were missing or mapped incorrectly so wrong player was winning |
+| Scores reset after every round | I had scores inside the method, not in `__init__` |
+| Game ended after one round | `play_round()` wasn't returning `True` to keep the loop going |
+| Invalid input ended the game | No early `return True` after the invalid input check |
+| Computer choice printed on invalid input | Computer choice was generated before input was validated |
 
 ---
+
+## How I Fixed It
+
+**`Winner_Map` wrong logic**
+- Rewrote it from one consistent point of view — always player vs computer
+- If the tuple `(player, computer)` is in the map, player wins. Otherwise computer wins. Simple and clean.
+
+**Scores resetting**
+- Moved `players_score`, `computers_score`, `ties`, `rounds_played` all into `__init__`
+- This way they belong to the object, not the method — so they stay alive across every round and every method can access them
+
+**Game ending after one round**
+- Added `return True` at the end of `play_round()` after `show_score()`
+- The `while True` loop in `start()` checks this return value — `True` keeps it going, `False` breaks it
+
+**Invalid input ending the game**
+- Added `return True` right after the invalid input `print` — this sends control back to the loop without breaking it
+
+**Computer choice showing on invalid input**
+- Moved `computer = self.computer_choice()` to after all input validation is done
+- Computer only picks once we know the player input is valid
+
+---
+
+## What I Learned
+
+- Store anything that needs to survive across multiple method calls in `__init__` — that's exactly what it's for
+- `return True` and `return False` from inside a loop-controlling method is a clean way to manage game flow without messy `break` statements everywhere
+- A dictionary as a lookup table (`Winner_Map`) beats a long chain of `if/elif` every time — shorter, readable, and easy to change
+- Always validate input before doing anything else with it — generate computer choice after, not before
+- One consistent point of view in logic (`player wins if tuple in map, else computer wins`) prevents confusing bugs

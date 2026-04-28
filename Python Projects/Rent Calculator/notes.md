@@ -1,36 +1,58 @@
-# Inputs We Need From User
+# Rent Calculator | Notes
 
-- Number of friends / people living  
-- Total rent of Room/PG  
-- Total food ordered  
-- Electricity units spent  
-- Charge per unit  
+## Inputs Needed From User
 
----
-
-# Outputs
-
-- Total amount to be paid  
-- Each member should pay  
+- Number of friends / people living together
+- Total rent of Room / PG
+- Total amount spent on food
+- Electricity units consumed
+- Charge per unit
 
 ---
 
-# Mistakes I Did
+## Expected Output
 
-- Did not convert input using `int()`
-- Wrote everything directly (no structure)
-- Didn’t handle division by zero  
-- Didn’t check case when friends = 0  
-- Used `return` outside function  
-- Didn’t use proper exception handling  
+- Total amount to be paid
+- Share of each member
 
 ---
 
-# Solutions
+## How I Planned It
 
-- Convert input using `int()`  
-- Use class and functions for better structure  
-- Handle case when friends = 0  
-- Use `try` and `except`  
-- Use `exit()` when needed  
-- Keep class reusable  
+- One class `RentCalculator` to hold all the data and logic
+- `calculate_total()` to add rent + food + electricity bill
+- `split()` to divide total by number of friends
+- Take all inputs outside the class, create an object, call the methods
+
+---
+
+## Mistakes I Made
+
+| Mistake | Why It Was a Problem |
+|--------|----------------------|
+| Did not convert input using `int()` | `input()` always returns a string, math operations fail on strings |
+| Wrote everything directly with no structure | Hard to read, reuse, or fix later |
+| Did not handle division by zero | Crashes the program if friends = 0 |
+| Did not check if friends = 0 before creating object | The error shows up inside the class instead of being caught early |
+| Used `return` outside a function | Syntax error, `return` only works inside a function |
+| No exception handling | Any wrong input like letters instead of numbers crashes everything |
+
+---
+
+## How I Fixed It
+
+- Wrapped all inputs in `int()` to convert string to number
+- Used a class with separate methods for total and split calculation
+- Added a check before object creation — if `friends == 0`, print error and `exit()`
+- Also added the same check inside `split()` as a safety net
+- Wrapped all inputs in `try / except ValueError` to handle wrong input gracefully
+- Kept the class reusable — it only does calculations, input/output stays outside
+
+---
+
+## What I Learned
+
+- `input()` always returns a string — always convert it
+- Classes are not just for complex programs, even small tools benefit from structure
+- Handle edge cases before they reach your logic, not inside it
+- `try / except` should wrap the risky part only, not the entire program
