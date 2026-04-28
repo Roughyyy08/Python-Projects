@@ -14,6 +14,10 @@ root.mainloop()
 
 > `root.mainloop()` is important — without it the window appears for a split second and disappears.
 
+After these three steps your outpput should  look somethinng like this basically it is a basic GUI
+<img width="253" height="291" alt="image" src="https://github.com/user-attachments/assets/cf499c10-6c30-4ebe-9d85-35eb96c527e1" />
+
+
 ---
 
 ## GUI Manipulation
