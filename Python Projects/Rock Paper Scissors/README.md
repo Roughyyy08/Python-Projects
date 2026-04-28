@@ -124,6 +124,6 @@ And the `Winner_Map` dictionary approach taught me that a well-structured data s
 
 This project is part of my public learning challenge to become an AI/ML Engineer in 365 days.
 
-**Day 15** — Python fundamentals complete. Building projects while moving into NumPy and Pandas.
+**Day 16** — Python fundamentals complete. Building projects while moving into NumPy and Pandas.
 
 → [View the full journey](https://github.com/Roughyyy08/Python-Projects)
