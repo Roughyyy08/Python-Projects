@@ -1,1 +1,0 @@
-computer_choice = randint(-1,1)

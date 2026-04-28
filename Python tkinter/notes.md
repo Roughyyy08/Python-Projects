@@ -1,37 +1,110 @@
-# Build GUIs Using Python | Python Tkinter
+# Build GUIs Using Python | Tkinter
 
-##  how to initialize the GUI
+## How to Initialize the GUI
 
-- first we have to import tkinter
-- then create a variable which will be an object of tk class
-- now we want our interface to be visible when we run our code
+- Import tkinter
+- Create a variable as an object of the `Tk` class
+- Call `mainloop()` to keep the window visible
 
-we can do this by following below steps:
+```python
+from tkinter import *
+root = Tk()
+root.mainloop()
+```
 
-- `from tkinter import *`
-- `root = Tk()`
-- `root.mainloop()` this line is important so that gui stays on the screen if we dont add it the gui will be visible for few secs and disappear 
+> `root.mainloop()` is important — without it the window appears for a split second and disappears.
+
+---
 
 ## GUI Manipulation
 
-- to change the title `tk` to your custom title use `root.title("your-title")`
-- to change the favicn use `root.iconbitmap("your-favicon-path")`
-    1. the favicon should be in .ico not .png or anything else
-    2. give the proper relative path of the favion
-    3. if you are still facing the issue import Path from pathlib `from pathlib import Path`
-    4. then make a variable and give the path as shown here : icon_path = Path(__file__).parent/
-    5. now use this icon_path instead of using favicon path directly
-- to set a minimum size of your GUI use this `root.minsize(width,height)`
-- to open it in a specific size use `root.geometry("width x height")`
-- to change the background color use `root.configure(background="your-color")`
-- to display a image on the GUI you need to import it using `from PIL import ImageTk, Image`
-    - if not already installed, install a library using this command in terminal `pip install pillow`
-    - then make a variable and store it like this `ImageTk.PhotoImage(Image.open(image-path))`
-    - make a lablel for this using `Label(root, image=your-variable)`
-    - open it using a geometry manager `image_label.pack()`
-    - you can also change the position of image using `pady=(a,b)` or `padx=(a,b)` inside the `pack()`
-- to resize your image first make a variable and open it using `Image.open(img-path)` then use `resize((width, height))`
-- to write a texxt on the screen use label as shown for image but instead of `image=` use `text=`
-- you can change the background and text colour also the font style and size `text="demo", fg="colour", bg="color", font=("style", size)` after 
-- to add a input box make a variable and use `Entry(root, width="")` to customize height use `ipady=""` inside `pack()`
-- to make a button
+### Window Settings
+
+- Change title: `root.title("your-title")`
+- Set minimum size: `root.minsize(width, height)`
+- Open in a specific size: `root.geometry("widthxheight")` — no spaces around `x`
+- Change background color: `root.configure(background="color")`
+
+### Favicon (Window Icon)
+
+- Change favicon: `root.iconbitmap("your-favicon-path")`
+  - Must be a `.ico` file, not `.png` or anything else
+  - Use the correct relative path
+  - If still facing issues, use `pathlib`:
+
+```python
+from pathlib import Path
+icon_path = Path(__file__).parent / "icon.ico"
+root.iconbitmap(icon_path)
+```
+
+---
+
+## Widgets
+
+### Displaying an Image
+
+- Install Pillow if not already installed:
+
+```bash
+pip install pillow
+```
+
+- Import and display:
+
+```python
+from PIL import ImageTk, Image
+
+img = ImageTk.PhotoImage(Image.open("image-path"))
+image_label = Label(root, image=img)
+image_label.pack()
+```
+
+- Adjust position using `pady=(top, bottom)` or `padx=(left, right)` inside `pack()`
+
+### Resizing an Image
+
+```python
+img = Image.open("image-path")
+img = img.resize((width, height))
+```
+
+---
+
+### Displaying Text
+
+```python
+Label(root, text="your text", fg="text-color", bg="bg-color", font=("FontStyle", size)).pack()
+```
+
+---
+
+### Input Box (Entry)
+
+```python
+entry = Entry(root, width=30)
+entry.pack(ipady=8)
+```
+
+- `width` controls horizontal size
+- `ipady` inside `pack()` controls height
+
+---
+
+### Button
+
+- Your notes got cut off here — add how to make a button once you learn it:
+
+```python
+btn = Button(root, text="Click Me", command=your_function)
+btn.pack()
+```
+
+---
+
+## Mistakes to Avoid
+
+- Using `root.geometry("width x height")` with spaces around `x` — it won't work
+- Using `.png` for favicon instead of `.ico`
+- Forgetting `root.mainloop()` at the end
+- Not storing the image in a variable before passing to `Label` — Tkinter's garbage collector will delete it and the image won't show
