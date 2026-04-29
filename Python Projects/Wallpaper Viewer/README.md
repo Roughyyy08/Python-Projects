@@ -8,7 +8,6 @@ one by one using Prev and Next buttons.
 
 ## 📸 Preview
 
-> Add a screenshot of your app here after running it.
 > ![App Preview](app-preview.png)
 
 ---
