@@ -107,6 +107,6 @@ The second thing was **loading everything upfront**. All images are resized and 
 
 This project is part of my public learning challenge to become an AI/ML Engineer in 365 days.
 
-**Day 15** — Python fundamentals complete. Exploring Tkinter before moving into NumPy and Pandas.
+**Day 20** — Python fundamentals complete. Exploring Tkinter before moving into NumPy and Pandas.
 
 → [View the full journey](https://github.com/Roughyyy08/Python-Projects)
