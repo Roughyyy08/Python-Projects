@@ -3,6 +3,8 @@
 A fully functional desktop calculator built with Python and Tkinter. Supports addition, subtraction, multiplication, division, decimal input, and chained operations — all inside a clean dark-themed window.
 
 ---
+<img width="363" height="590" alt="image" src="https://github.com/user-attachments/assets/fb3d5c70-0544-4165-9a85-5c451f7e057a" />
+---
 
 ## What It Does
 
