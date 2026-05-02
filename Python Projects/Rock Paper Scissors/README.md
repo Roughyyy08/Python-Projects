@@ -3,6 +3,9 @@
 A terminal-based Rock Paper Scissors game in Python where you play multiple rounds against the computer, track scores, and get a final result at the end.
 
 ---
+<img width="942" height="895" alt="image" src="https://github.com/user-attachments/assets/50dc3665-2224-4696-b06b-15415946cbec" />
+
+---
 
 ## What Makes This Different From a Basic Version
 
