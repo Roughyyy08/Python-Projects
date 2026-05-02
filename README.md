@@ -75,7 +75,7 @@ This is the path. Not rigid, but directional.
 | Phase | Focus | Status |
 |-------|-------|--------|
 | **Phase 0** | Python Fundamentals | ✅ Complete — Day 15 |
-| **Phase 1** | NumPy | 🔄 In Progress |
+| **Phase 1** | NumPy | ✅ Complete — Day 20 |
 | **Phase 2** | Pandas | ⏳ Up Next |
 | **Phase 3** | Maths | ⏳ Planned |
 | **Phase 4** | Data Visualization (Matplotlib / Seaborn) | ⏳ Planned |
