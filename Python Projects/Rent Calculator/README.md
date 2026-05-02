@@ -3,6 +3,9 @@
 A simple Python tool to split shared living expenses equally among friends. Enter your rent, food, and electricity details and it instantly tells you how much each person owes.
 
 ---
+<img width="612" height="283" alt="image" src="https://github.com/user-attachments/assets/785b4d5f-2127-4f9f-a6fa-e4972a2e365b" />
+
+---
 
 ## What Problem Does This Solve?
 
