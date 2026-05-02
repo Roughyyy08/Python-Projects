@@ -3,6 +3,9 @@
 A simple login page built with Python's Tkinter library. Not a real authentication system — built purely to understand how Tkinter works and how to build a basic GUI in Python.
 
 ---
+<img width="448" height="676" alt="image" src="https://github.com/user-attachments/assets/5668f9c5-e9f9-43a7-9e5a-a4e421daf365" />
+
+---
 
 ## Why I Built This
 
